@@ -13,5 +13,10 @@ pipeline {
 		sh 'echo "Testing Terraform Plan & apply"'
             }
         }
+        stage('validate') {
+            steps {
+		sh 'echo "Validate testing"'
+            }
+        }
     }
 }
