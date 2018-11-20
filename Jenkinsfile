@@ -8,9 +8,9 @@ pipeline {
             }
 
         }
-        stage('terraform plan & apply') {
+        stage('terraform') {
             steps {
-                sh './terra_script.sh'
+		sh 'echo "Testing Terraform Plan & apply
             }
         }
     }
