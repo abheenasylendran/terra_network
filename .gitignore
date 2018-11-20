@@ -1,3 +1,4 @@
 .git/*
 .terraform/*
-terrafor.tfstate
+terraform.tfstate
+*.out
