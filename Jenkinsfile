@@ -10,7 +10,7 @@ pipeline {
         }
         stage('terraform') {
             steps {
-		sh 'echo "Testing Terraform Plan & apply
+		sh 'echo "Testing Terraform Plan & apply"'
             }
         }
     }
