@@ -21,8 +21,7 @@ pipeline {
 		sh 'git clone https://github.com/sunil-surendran/spec_terra.git'
 		sh 'cd spec_terra'
 		sh 'bundle intall'
-		sh 'bundle exec awspec generate ec2 vpc-094bad71
-		sh 'awspec generate ec2 vpc-094bad71'
+		sh 'bundle exec awspec generate ec2 vpc-094bad71'
             }
         }
     }
