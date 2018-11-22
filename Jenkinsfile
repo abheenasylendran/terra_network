@@ -14,8 +14,9 @@ pipeline {
 		sh './terra_script.sh'
             }
         }
-        stage('validate') {
+        stage('validate') {		
             steps {
+		sh '#!/bin/bash -l'    
 		sh 'echo "Validate testing"'
 		sh 'rm -rf spec_terra'
 		sh 'git clone https://github.com/sunil-surendran/spec_terra.git'
