@@ -23,6 +23,15 @@ resource "aws_subnet" "pub_subnet" {
 	}
 }
 
+resource "aws_subnet" "pub_subnetb" {
+	vpc_id = "${aws_vpc.vpc.id}"
+	cidr_block = "10.0.2.0/24"
+	availability_zone = "us-west-2a"
+	tags {
+		Name = "pub_subnet"
+	}
+}
+
 resource "aws_route_table" "pub_rt" {
 	vpc_id = "${aws_vpc.vpc.id}"
 	route {

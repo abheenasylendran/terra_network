@@ -17,7 +17,8 @@ pipeline {
         stage('validate') {
             steps {
 		sh 'echo "Validate testing"'
-		sh '../awspec_test/RunSpec.sh'
+		sh 'git clone https://github.com/sunil-surendran/spec_terra.git'
+		sh 'awspec generate ec2 vpc-094bad71'
             }
         }
     }
